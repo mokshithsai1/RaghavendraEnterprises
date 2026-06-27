@@ -19,7 +19,11 @@ def create_app():
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     app.config["SECRET_KEY"] = os.environ.get("SESSION_SECRET", "dev-secret-key")
 
-    CORS(app, supports_credentials=True, origins="*")
+    CORS(
+    app,
+    supports_credentials=True,
+    origins=["https://raghavendraenterprises.vercel.app"]
+    )
 
     db.init_app(app)
 
