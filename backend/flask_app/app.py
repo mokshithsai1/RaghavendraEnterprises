@@ -41,7 +41,11 @@ def create_app():
 
     @app.route("/")
     def index():
-        return redirect("http://localhost:5173")
+        return {
+            "message": "Raghavendra Enterprises Backend is Running",
+            "frontend": "https://raghavendraenterprises.vercel.app",
+            "status": "success"
+        }, 200
 
     with app.app_context():
         import models  # noqa: F401 — must import before create_all so SQLAlchemy registers all tables
