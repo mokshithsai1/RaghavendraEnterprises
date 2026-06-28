@@ -37,7 +37,7 @@ function Router() {
       <Route path="/checkout" component={CheckoutPage} />
       <Route path="/order-confirmation" component={OrderConfirmationPage} />
       <Route path="/my-orders" component={MyOrdersPage} />
-      <Route path="/admin" component={AdminLoginPage} />
+      <Route exact path="/admin" component={AdminLoginPage} />
       <Route path="/admin/dashboard" component={AdminDashboardPage} />
       <Route path="/admin/orders" component={AdminOrdersPage} />
       <Route path="/admin/inventory" component={AdminInventoryPage} />
