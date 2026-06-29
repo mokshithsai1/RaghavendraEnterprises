@@ -36,7 +36,7 @@ const statusColors = {
 
 const cancellableStatuses = new Set(["pending", "confirmed", "ready"]);
 
-const BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
+const BASE = "https://raghavendraenterprises-5kyt.onrender.com";
 
 export default function MyOrdersPage() {
   const [phone, setPhone] = useState("");
